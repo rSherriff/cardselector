@@ -1,0 +1,21 @@
+{
+	"title":"ual: MA games design",
+	"subtitle":"2021 - 2022",
+	"games":	
+	[
+		{
+			"title": "Tetris",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Tetris2",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		}
+	]
+}
