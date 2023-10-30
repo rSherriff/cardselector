@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using TMPro;
+using UnityEngine.Events;
 
 public class SelectManager : Singleton<SelectManager>
 {
@@ -13,7 +14,7 @@ public class SelectManager : Singleton<SelectManager>
     public Transform cardRightPoint;
 
     [SerializeField] private int selectedItemIndex;
-    [SerializeField] private List<Card> cards = new List<Card>();
+    [SerializeField] public List<Card> cards = new List<Card>();
 
     //Curves
     public float cardMovementSpeed;
@@ -33,6 +34,11 @@ public class SelectManager : Singleton<SelectManager>
 
     private bool transitioningCards = false;
 
+    public UnityEvent TransistioningCardsEvent;
+    public UnityEvent CardSelectedEvent;
+
+    private int numCountCards = 0;
+
     private void Start()
     {
         selectedItemIndex = 0;
@@ -42,7 +48,13 @@ public class SelectManager : Singleton<SelectManager>
     {
         newCard.gameObject.transform.position = cardInitialPoint.position;
         newCard.gameObject.transform.rotation = Quaternion.identity;
-        cards.Add(newCard.GetComponent<Card>());
+        cards.Add(newCard);
+
+        if(newCard.GetType().IsSubclassOf(typeof(CountCard)))
+        {
+            numCountCards += 1;
+        }
+
         RefreshDisplay();
     }    
 
@@ -74,6 +86,8 @@ public class SelectManager : Singleton<SelectManager>
     {
         transitioningCards = true;
 
+        TransistioningCardsEvent.Invoke();
+
         Card oldCard = cards[selectedItemIndex];
         oldCard.Disable();
 
@@ -86,7 +100,7 @@ public class SelectManager : Singleton<SelectManager>
         yield return new WaitUntil(StartCardIn);
 
         //Update selected card
-        selectedItemIndex += movement;
+        selectedItemIndex -= movement;
         selectedItemIndex = selectedItemIndex < 0 ? cards.Count -1 : selectedItemIndex; //Have we dropped below 0?
         selectedItemIndex = selectedItemIndex >= cards.Count ? 0 : selectedItemIndex; //Have we gone above max?
 
@@ -98,7 +112,7 @@ public class SelectManager : Singleton<SelectManager>
         startPosition = newCard.transform.position;
         finalPosition = cardDisplayPoint.position;
 
-        StartCoroutine(MoveCard(newCard, startPosition, finalPosition, cardOutCurve));
+        yield return StartCoroutine(MoveCard(newCard, startPosition, finalPosition, cardOutCurve));
 
         newCard.Enable();
 
@@ -126,6 +140,7 @@ public class SelectManager : Singleton<SelectManager>
 
     public void RefreshDisplay()
     {
+        int countNum = 0;
         for(int i = 0; i < cards.Count; i++)
         {
             if(i == selectedItemIndex)
@@ -137,6 +152,11 @@ public class SelectManager : Singleton<SelectManager>
             {
                 cards[i].gameObject.transform.position = cardInitialPoint.position;
             }
+
+            if (cards[i].GetType().IsSubclassOf(typeof(CountCard)))
+            {
+                ((CountCard)cards[i]).SetupCount(countNum++, numCountCards);
+            }
         }
     }
 
@@ -144,6 +164,8 @@ public class SelectManager : Singleton<SelectManager>
     {
         StartCoroutine(FadeMusicOut());
         PlayMenuSound(menuSelectSound);
+
+        CardSelectedEvent.Invoke();
     }
 
     private void PlayMenuSound(AudioClip clip)

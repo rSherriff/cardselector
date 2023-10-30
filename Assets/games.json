@@ -1,17 +1,121 @@
 {
-	"title":"ual: MA games design",
+	"title":"ual:\nMA games design",
 	"subtitle":"2021 - 2022",
-	"games":	
-	[
+	"games": [
 		{
-			"title": "Tetris",
+			"title": "Roulette",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Act 2 Prototype",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "The Tale of the Singing Peaks",
 			"picture": "tetris.jpg",
 			"credit": "Alexey Pajitnov",
 			"description": "",
 			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
 		},
 		{
-			"title": "Tetris2",
+			"title": "Solar Gram's Fix-it Shop",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Welcome to my Funeral",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "The Variable",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "An Immigrant's Room",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Quest Roll",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Fertility, Crime and Economy",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "The Call of Interview",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "The Puppet Game",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Little Island Adventure",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Project Hammer",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Intersteller Exploration",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Whisper of Nature",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Have a Sweet Dream",
+			"picture": "tetris.jpg",
+			"credit": "Alexey Pajitnov",
+			"description": "",
+			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+		},
+		{
+			"title": "Rose of Remembrance",
 			"picture": "tetris.jpg",
 			"credit": "Alexey Pajitnov",
 			"description": "",
