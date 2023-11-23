@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using System.IO;
 
 public class CardLoader : Singleton<CardLoader>
@@ -9,6 +10,8 @@ public class CardLoader : Singleton<CardLoader>
     public GameObject titleCard;
 
     private bool createdAllCards;
+
+    public UnityEvent cardsLoaded;
 
     public void Start()
     {
@@ -47,6 +50,8 @@ public class CardLoader : Singleton<CardLoader>
         }
 
         createdAllCards = true;
+
+        cardsLoaded.Invoke();
 
         yield return null;
     }

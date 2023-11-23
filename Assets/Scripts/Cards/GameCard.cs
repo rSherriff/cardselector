@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Mono.Reflection;
+using UnityEngine.Rendering.HighDefinition;
 
 public class GameCard : CountCard
 {
     public TextMeshPro title;
     public TextMeshPro credit;
     public TextMeshPro description;
+    public TextMeshPro play;
+    public TextMeshPro instructions;
+    public Material playButtonMaterial;
     public Animator animator;
 
     public bool SelectAnimationComplete = false;
@@ -52,5 +57,26 @@ public class GameCard : CountCard
     public bool IsAnimationComplete()
     {
         return SelectAnimationComplete;
+    }
+
+    override public void UpdateColor(Color newColor)
+    {
+        title.color = newColor;
+        credit.color = newColor;
+        description.color = newColor;
+        count.color = newColor;
+        play.color = newColor;
+        instructions.color = newColor;
+        playButtonMaterial.SetColor("_BaseColor", newColor);
+    }
+
+    override public void UpdateFont(TMP_FontAsset font)
+    {
+        title.font = font;
+        credit.font = font;
+        description.font = font;
+        count.font = font;
+        play.font = font;
+        instructions.font = font;
     }
 }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Mono.Reflection;
+using Unity.VisualScripting;
 
 public class ModelCard : CountCard
 {
@@ -30,5 +32,17 @@ public class ModelCard : CountCard
             //modelGimbal.Rotate(new Vector3(0, -Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotationSpeed);
             modelGimbal.Rotate(new Vector3(Input.GetAxis("Mouse Y"), -Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotationSpeed,Space.World);
         }
+    }
+
+    override public void UpdateColor(Color newColor)
+    {
+        title.color = newColor;
+        credit.color = newColor;
+    }
+
+    override public void UpdateFont(TMP_FontAsset font)
+    {
+        title.font = font;
+        credit.font = font;
     }
 }

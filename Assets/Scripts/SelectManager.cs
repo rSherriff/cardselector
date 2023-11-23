@@ -14,7 +14,10 @@ public class SelectManager : Singleton<SelectManager>
     public Transform cardRightPoint;
 
     [SerializeField] private int selectedItemIndex;
+    [SerializeField] private int lastItemIndex;
     [SerializeField] public List<Card> cards = new List<Card>();
+
+    public TMP_FontAsset font;
 
     //Curves
     public float cardMovementSpeed;
@@ -38,10 +41,13 @@ public class SelectManager : Singleton<SelectManager>
     public UnityEvent CardSelectedEvent;
 
     private int numCountCards = 0;
+    public float resetTime;
 
     private void Start()
     {
         selectedItemIndex = 0;
+
+        StartCoroutine(ResetRoutine());
     }
 
     public void AddSelectObject(Card newCard)
@@ -49,6 +55,8 @@ public class SelectManager : Singleton<SelectManager>
         newCard.gameObject.transform.position = cardInitialPoint.position;
         newCard.gameObject.transform.rotation = Quaternion.identity;
         cards.Add(newCard);
+
+        newCard.UpdateFont(font);
 
         if(newCard.GetType().IsSubclassOf(typeof(CountCard)))
         {
@@ -67,7 +75,7 @@ public class SelectManager : Singleton<SelectManager>
             {
                 ((SelectableCard)selectedCard).Select();
             }
-            }
+        }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow) && !transitioningCards)
@@ -86,9 +94,15 @@ public class SelectManager : Singleton<SelectManager>
     {
         transitioningCards = true;
 
+        //Update selected card
+        lastItemIndex = selectedItemIndex;
+        selectedItemIndex -= movement;
+        selectedItemIndex = selectedItemIndex < 0 ? cards.Count - 1 : selectedItemIndex; //Have we dropped below 0?
+        selectedItemIndex = selectedItemIndex >= cards.Count ? 0 : selectedItemIndex; //Have we gone above max?
+
         TransistioningCardsEvent.Invoke();
 
-        Card oldCard = cards[selectedItemIndex];
+        Card oldCard = cards[lastItemIndex];
         oldCard.Disable();
 
         //Move Old Card
@@ -98,11 +112,6 @@ public class SelectManager : Singleton<SelectManager>
         StartCoroutine(MoveCard(oldCard, startPosition, finalPosition, cardInCurve));
 
         yield return new WaitUntil(StartCardIn);
-
-        //Update selected card
-        selectedItemIndex -= movement;
-        selectedItemIndex = selectedItemIndex < 0 ? cards.Count -1 : selectedItemIndex; //Have we dropped below 0?
-        selectedItemIndex = selectedItemIndex >= cards.Count ? 0 : selectedItemIndex; //Have we gone above max?
 
         Card newCard = cards[selectedItemIndex];
 
@@ -155,7 +164,7 @@ public class SelectManager : Singleton<SelectManager>
 
             if (cards[i].GetType().IsSubclassOf(typeof(CountCard)))
             {
-                ((CountCard)cards[i]).SetupCount(countNum++, numCountCards);
+                ((CountCard)cards[i]).SetupCount(++countNum, numCountCards);
             }
         }
     }
@@ -183,6 +192,40 @@ public class SelectManager : Singleton<SelectManager>
         while (!Mathf.Approximately(source.volume, 0))
         {
             source.volume = Mathf.MoveTowards(source.volume, 0, fadeSpeed * Time.deltaTime);
+
+            yield return null;
+        }
+    }
+
+    public Card GetLastCard()
+    {
+        return cards[lastItemIndex];
+    }
+
+    public Card GetCurrentCard()
+    {
+        return cards[selectedItemIndex];
+    }
+
+    IEnumerator ResetRoutine()
+    {
+        float idleTime = resetTime;
+        while(true)
+        {
+            if(Input.anyKey)
+            {
+                idleTime = resetTime;
+            }
+            else
+            {
+                idleTime -= Time.deltaTime;
+            }
+
+            if(idleTime <= 0 && selectedItemIndex != 0)
+            {
+                StartCoroutine(TransistionCards(-selectedItemIndex));
+                idleTime = resetTime;
+            }
 
             yield return null;
         }

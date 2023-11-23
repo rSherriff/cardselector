@@ -19,6 +19,12 @@ public class Card : MonoBehaviour
     {
         active = false;
     }
+
+    virtual public void UpdateColor(Color newColor)
+    { }
+
+    virtual public void UpdateFont(TMP_FontAsset font)
+    { }
 }
 
 public class SelectableCard : Card
