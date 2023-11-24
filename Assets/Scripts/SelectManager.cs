@@ -223,7 +223,7 @@ public class SelectManager : Singleton<SelectManager>
 
             if(idleTime <= 0 && selectedItemIndex != 0)
             {
-                StartCoroutine(TransistionCards(-selectedItemIndex));
+                StartCoroutine(TransistionCards(selectedItemIndex));
                 idleTime = resetTime;
             }
 
