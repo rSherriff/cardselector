@@ -208,7 +208,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -4.9467, y: -3.8919}
-  m_SizeDelta: {x: 1.4468, y: 0.8779}
+  m_SizeDelta: {x: 9.64, y: 0.8779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &2923753259704501795
 MeshRenderer:
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <<- ->>
+  m_text: L <<- ->> R
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fe102e01e814cf744afa3b4e07f1edae, type: 2}
   m_sharedMaterial: {fileID: 5469746792144403627, guid: fe102e01e814cf744afa3b4e07f1edae, type: 2}
@@ -299,12 +299,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5.75
+  m_fontSize: 5
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 1
-  m_fontSizeMax: 72
+  m_fontSizeMax: 5
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '>>> Play'
+  m_text: '>>> Play [Enter]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fe102e01e814cf744afa3b4e07f1edae, type: 2}
   m_sharedMaterial: {fileID: 5469746792144403627, guid: fe102e01e814cf744afa3b4e07f1edae, type: 2}
