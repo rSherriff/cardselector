@@ -89,7 +89,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.5421925, y: -1.793426}
+  m_AnchoredPosition: {x: -5.5421925, y: -2.39}
   m_SizeDelta: {x: 9.64, y: 0.8779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &377130346634758998
@@ -378,7 +378,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Left and Right Arrows to browse games
 
-    Enter/Return to play a game'
+    Enter/Return to play a game
+
+    Please
+    exit the games'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fe102e01e814cf744afa3b4e07f1edae, type: 2}
   m_sharedMaterial: {fileID: 5469746792144403627, guid: fe102e01e814cf744afa3b4e07f1edae, type: 2}
@@ -659,7 +662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.4, y: -1.793426}
+  m_AnchoredPosition: {x: -4.4, y: -2.39}
   m_SizeDelta: {x: 9.64, y: 0.8779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7751332013138283534

@@ -1735,7 +1735,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438383041287506526, guid: 1a33235251bae4545b1bf89c6283c38b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238899499566207142, guid: 1a33235251bae4545b1bf89c6283c38b, type: 3}
+      propertyPath: m_text
+      value: 'Left and Right Arrows to browse games
+
+        Enter/Return to play
+        a game
+
+        Please exit the games'
       objectReference: {fileID: 0}
     - target: {fileID: 2360917680295847827, guid: 1a33235251bae4545b1bf89c6283c38b, type: 3}
       propertyPath: m_RootOrder
@@ -1784,7 +1793,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5383066517579832576, guid: 1a33235251bae4545b1bf89c6283c38b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3827893685987530056, guid: 1a33235251bae4545b1bf89c6283c38b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3389458404423863737, guid: 1a33235251bae4545b1bf89c6283c38b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7769258643837173969, guid: 1a33235251bae4545b1bf89c6283c38b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1a33235251bae4545b1bf89c6283c38b, type: 3}
 --- !u!1001 &6652775199823914695
 PrefabInstance:
