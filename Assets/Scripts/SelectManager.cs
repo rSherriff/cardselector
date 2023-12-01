@@ -80,14 +80,24 @@ public class SelectManager : Singleton<SelectManager>
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow) && !transitioningCards)
             {
-                StartCoroutine(TransistionCards(-1));
+                MoveOnLeftArrow();
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow) && !transitioningCards)
             {
-                StartCoroutine(TransistionCards(1));
+                MoveOnRightArrow();
             }
         }
   
+    }
+
+    public void MoveOnLeftArrow()
+    {
+        StartCoroutine(TransistionCards(1));
+    }
+
+    public void MoveOnRightArrow()
+    {
+        StartCoroutine(TransistionCards(-1));
     }
 
     private IEnumerator TransistionCards(int movement)

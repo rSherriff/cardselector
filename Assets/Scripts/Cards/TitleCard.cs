@@ -9,6 +9,9 @@ public class TitleCard : Card
 {
     public TextMeshPro title;
     public TextMeshPro instructions;
+    public TextMeshPro arrowLeft;
+    public TextMeshPro arrowRight;
+
     public void Setup(string title)
     {
         this.title.text = title;
@@ -18,11 +21,15 @@ public class TitleCard : Card
     {
         title.color = newColor;
         instructions.color = newColor;
+        arrowLeft.color = newColor;
+        arrowRight.color = newColor;
     }
 
     override public void UpdateFont(TMP_FontAsset font)
     {
         title.font = font;
         instructions.font = font;
+        arrowLeft.font = font;
+        arrowRight.font = font;
     }
 }

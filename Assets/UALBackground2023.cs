@@ -36,7 +36,7 @@ public class UALBackground2023 : MonoBehaviour
     IEnumerator ChangeColour()
     {
         currentGradientValue %= 1;
-        float t = currentGradientValue;
+        float t = currentGradientValue; 
 
         Card lastCard = SelectManager.Instance.GetLastCard();
         Card currentCard = SelectManager.Instance.GetCurrentCard();

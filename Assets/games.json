@@ -1,125 +1,134 @@
 {
-	"title":"ual:\nMA games design",
+	"title":"ual:\nMA Games Design",
 	"subtitle":"2021 - 2022",
 	"games": [
 		{
-			"title": "Roulette",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\Win_V0.4Windowed\\Win_V0.4Windowed\\Call of Interview.exe"
-		},
-		{
-			"title": "Act 2 Prototype",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "The Tale of the Singing Peaks",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "Solar Gram's Fix-it Shop",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "Welcome to my Funeral",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "The Variable",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "An Immigrant's Room",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "Quest Roll",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "Fertility, Crime and Economy",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "The Call of Interview",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "The Puppet Game",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "Little Island Adventure",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "Project Hammer",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "Intersteller Exploration",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "Whisper of Nature",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
-		},
-		{
-			"title": "Have a Sweet Dream",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+			"title": "Rent",
+			"picture": "",
+			"credit": "Hanjun Shi",
+			"description": "How an ordinary person try to earn enough money to survive and pay the rent in 2022 London.",
+			"executable": ""
 		},
 		{
 			"title": "Rose of Remembrance",
-			"picture": "tetris.jpg",
-			"credit": "Alexey Pajitnov",
-			"description": "",
-			"executable": "C:\\Users\\WB-1-22-1\\Downloads\\10 Luisa Mai\\Game Window Build\\ScenesCombined.exe"
+			"picture": "",
+			"credit": "Demi Li",
+			"description": "A first person, story driven, puzzle game. Dr. Reed’s first contract is to craft a Memory Rose for Ashe. The client is Ashe’s mother, Gloria.",
+			"executable": ""
+		},
+		{
+			"title": "Tavern Tale",
+			"picture": "",
+			"credit": "Noah Rigden",
+			"description": "Explore a fantasy realm and uncover the inner workings of a lowley tavern. Make your own choices, and let a die roll.",
+			"executable": ""
+		},
+		{
+			"title": "The Variable",
+			"picture": "",
+			"credit": "Anson Wong",
+			"description": "A stealth game where you infiltrate the simulation as the variable.  Your objective is to eliminate the VIP without being spotted and get out.",
+			"executable": ""
+		},
+		{
+			"title": "Rotate",
+			"picture": "",
+			"credit": "Li Dong",
+			"description": "A physics-based party game. Rotate the hammer and smash everything with it!",
+			"executable": ""
+		},
+		{
+			"title": "AnnaBelle",
+			"picture": "",
+			"credit": "Luisa Mai Maerkl",
+			"description": "temp",
+			"executable": ""
+		},
+		{
+			"title": "The Tale of the Singing Peaks",
+			"picture": "",
+			"credit": "Mo Wang & Leon Liedtke",
+			"description": "A narrative pixel-art platformer that takes you on a spooky psychological journey of body and mind.",
+			"executable": ""
+		},
+		{
+			"title": "SolarGram's Fix It Shop",
+			"picture": "",
+			"credit": "Skylar Law, Katharina Trappe, Anukriti Gupta, Vlad Chandran",
+			"description": "Embark on a solarpunk journey as you take over your grandmother's iconic repair shop on a post-climate-disaster Earth in this unique mechanic simulator.",
+			"executable": ""
+		},
+		{
+			"title": "Interstellar Adventure",
+			"picture": "",
+			"credit": "Cheng Min, Ziwei Su,  Dixuan Xu",
+			"description": "RPG Sokoban game: collecting crystals to repair their damaged spaceship and embark on a journey home.",
+			"executable": ""
+		},
+		{
+			"title": "One Night",
+			"picture": "",
+			"credit": "Jinghong Li",
+			"description": "A pixel-art narrative game about the discovery of a family memory.",
+			"executable": ""
+		},
+		{
+			"title": "Sixteen Point Sixty Seven Percent",
+			"picture": "",
+			"credit": "Dominic Stanton",
+			"description": "An isometric narrative-driven RPG. Participate in a game of Russian roulette. Uncover your past. With a gun in hand, roll the dice of fate.",
+			"executable": ""
+		},
+		{
+			"title": "LostHeart",
+			"picture": "",
+			"credit": "Zhiteng Chen",
+			"description": "An ARPG game set on a tiny open-world island where you can have fun gliding, swimming, enjoying many interesting events and revealing the island's secrets.",
+			"executable": ""
+		},
+		{
+			"title": "Dose99",
+			"picture": "",
+			"credit": "Kejia Cheng",
+			"description": "A survival game which goes back to early 2000s and test players' endurance.",
+			"executable": ""
+		},
+		{
+			"title": "The Goat Archive",
+			"picture": "",
+			"credit": "Wenda Yu",
+			"description": "A narrative game about the discovery of a hidden secret.",
+			"executable": ""
+		},
+		{
+			"title": "Forest Warfare",
+			"picture": "",
+			"credit": "Junjie Chen",
+			"description": "Fast-paced forest duel: Build, Battle, Conquer! Utilize unique skills, seize resources, protect your base, claim victory!",
+			"executable": ""
+		},
+		{
+			"title": "Froggy Duo",
+			"picture": "",
+			"credit": "Mingyu Zheng",
+			"description": "Froggy Duo is a casual two-player cooperative game. Players take on the roles of two croaking frogs embarking on an adventure in the jungle.",
+			"executable": ""
+		},
+		{
+			"title": "Call of Interview",
+			"picture": "",
+			"credit": "Hongpeng Luo",
+			"description": "A turn-based tactical games with various skill combination and unique 2.5D art style. ",
+			"executable": ""
+		},
+		{
+			"title": "Fetility, Crime, and Economy",
+			"picture": "",
+			"credit": "Samuel Beagrie",
+			"description": "City management game where players try to save a city by deciding what policies should be enacted. Managing the balance between funds, population, and crime.",
+			"executable": ""
 		}
+		
+		
 	]
 }

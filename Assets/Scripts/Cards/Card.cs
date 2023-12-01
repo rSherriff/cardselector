@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Security.Cryptography;
 
 public class Card : MonoBehaviour
 {
@@ -18,6 +19,16 @@ public class Card : MonoBehaviour
     public void Disable()
     {
         active = false;
+    }
+
+    public void MoveLeft()
+    {
+        SelectManager.Instance.MoveOnLeftArrow();
+    }
+
+    public void MoveRight()
+    {
+        SelectManager.Instance.MoveOnRightArrow();
     }
 
     virtual public void UpdateColor(Color newColor)

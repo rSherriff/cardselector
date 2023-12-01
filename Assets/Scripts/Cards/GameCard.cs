@@ -11,7 +11,8 @@ public class GameCard : CountCard
     public TextMeshPro credit;
     public TextMeshPro description;
     public TextMeshPro play;
-    public TextMeshPro instructions;
+    public TextMeshPro instructionsLeft;
+    public TextMeshPro instructionsRight;
     public Material playButtonMaterial;
     public Animator animator;
 
@@ -66,7 +67,8 @@ public class GameCard : CountCard
         description.color = newColor;
         count.color = newColor;
         play.color = newColor;
-        instructions.color = newColor;
+        instructionsLeft.color = newColor;
+        instructionsRight.color = newColor;
         playButtonMaterial.SetColor("_BaseColor", newColor);
     }
 
@@ -77,6 +79,7 @@ public class GameCard : CountCard
         description.font = font;
         count.font = font;
         play.font = font;
-        instructions.font = font;
+        instructionsLeft.font = font;
+        instructionsRight.font = font;
     }
 }
